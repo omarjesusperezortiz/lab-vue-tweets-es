@@ -1,6 +1,9 @@
 <template>
     <div class="app">
-        <Tweet />
+        <p>Static</p>
+        <Tweet :tweet = "tweets[0]"/>
+        <p>V-for</p>
+        <Tweet v-for="totalTweets in tweets" :tweet="totalTweets" />
     </div>
 </template>
   
